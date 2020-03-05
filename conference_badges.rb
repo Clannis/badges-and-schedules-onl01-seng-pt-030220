@@ -5,7 +5,7 @@ end
 
 def batch_badge_creator(speakers)
   badges =[]
-  array.each do |name|
+  speakers.each do |name|
     badges << badge_maker(name)
   end
   badges
@@ -20,5 +20,7 @@ def assign_rooms(speakers)
 end
 
 def printer(attendess)
-   
+   batch_badge_creator(attendees).each do |attendee|
+     puts "#{attendee}"
+   end
 end
