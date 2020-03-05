@@ -22,4 +22,5 @@ end
 def printer(attendess)
    batch_badge_creator(attendees).each do |attendee|
      puts "#{attendee}"
+   end
 end
